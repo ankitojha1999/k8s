@@ -2,26 +2,26 @@
 This project integrates Optical Character Recognition (OCR) using Azure Cognitive Services and text translation using the Google Translate API into a full-stack web application. The frontend is built with React, and the backend is built using Node.js and Express. Users can upload an image, extract the text using OCR, and then translate the extracted text into a specified language (e.g., Spanish).
 
 # Features
-Upload an image to the web app.
-Extract text from the image using Azure Cognitive Services' OCR API.
-Translate the extracted text into a specified language using Google Translate API.
-Display both the original extracted text and the translated text.
+  - Upload an image to the web app.
+  - Extract text from the image using Azure Cognitive Services' OCR API.
+  - Translate the extracted text into a specified language using Google Translate API.
+  - Display both the original extracted text and the translated text.
 # Technologies Used
-Frontend: React.js
-Backend: Node.js, Express
-Cloud Services:
-Azure Cognitive Services: OCR (Optical Character Recognition)
-Google Cloud Translate: Text translation
-File Upload: Multer
-HTTP Client: Axios
+  - Frontend: React.js
+  - Backend: Node.js, Express
+  - Cloud Services:
+    - Azure Cognitive Services: OCR (Optical Character Recognition)
+    - Google Cloud Translate: Text translation
+  - File Upload: Multer
+  - HTTP Client: Axios
 # Prerequisites
 To run this project, ensure you have the following installed:
 
-Node.js (v14+)
-npm (v6+)
-Cloud Accounts:
-Azure: For the Computer Vision API
-Google Cloud: For the Translate API
+ - Node.js (v14+)
+ - npm (v6+)
+ - Cloud Accounts:
+   - Azure: For the Computer Vision API
+   - Google Cloud: For the Translate API
 # Setup Instructions
 ## 1. Azure Setup for OCR
   - Sign in to Azure Portal.
