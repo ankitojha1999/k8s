@@ -8,8 +8,11 @@ const upload = multer({ dest: 'uploads/' });
 const app = express();
 app.use(cors());
 
-const subscriptionKey = '1893580c81eb4dd39a3a77823eda1868';
-const endpoint = 'https://projectassignment.cognitiveservices.azure.com';
+require('dotenv').config();
+
+const subscriptionKey = process.env.SUBSCRIPTION_KEY;
+const endpoint = process.env.ENDPOINT;
+
 
 app.post('/ocr', upload.single('image'), async (req, res) => {
     const image = req.file;

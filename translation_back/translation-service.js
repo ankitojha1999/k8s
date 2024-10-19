@@ -6,7 +6,10 @@ const app = express();
 app.use(cors());
 app.use(express.json()); // Add this line to parse JSON body
 
-const googleApiKey = 'AIzaSyDXjtOASiUIr917oGx2o47CuaRLb0I6v38';
+require('dotenv').config();
+
+const googleApiKey = process.env.googleApiKey;
+
 
 app.post('/translate', async (req, res) => {
     const { text, targetLanguage } = req.body;
